@@ -13,3 +13,42 @@ public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
   }
   return false;
 }
+
+/////// sumDouble ////////////////////////////////////////////////////////////////
+public int sumDouble(int a, int b) {
+  int c=0;
+  if(a == b){
+   return c = (2*(a+b));
+  }
+  return a +b;
+}
+
+/////// diff21 ///////////////////////////////////////////////////////////////////
+public int diff21(int n) {
+  if(n>21){
+   return Math.abs(2*(21-n));
+  }
+  return Math.abs(21-n);
+}
+
+/////// parrotTrouble ////////////////////////////////////////////////////////////
+public boolean parrotTrouble(boolean talking, int hour) {
+  if(talking == true && (hour<7 || hour>20)){
+   return true;
+  }
+  return false;
+}
+
+/////// makes10 //////////////////////////////////////////////////////////////////
+public boolean makes10(int a, int b) {
+  if(a == 10){
+   return true;
+  }
+  else if(b==10){
+   return true;
+  }
+  else if(a + b == 10){
+   return true;
+  } 
+  else{return false;}
+}
