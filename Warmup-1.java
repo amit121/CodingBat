@@ -74,7 +74,7 @@ public boolean posNeg(int a, int b, boolean negative) {
   }
 }
 
-/////// posNeg ////////////////////////////////////////////////////////////////////
+/////// notString /////////////////////////////////////////////////////////////////
 public String notString(String str) {
   String a = "not ";
   if(str.length()>=3 && str.substring(0,3).equals("not")){
