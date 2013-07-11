@@ -1,9 +1,9 @@
 /////// sleepIn //////////////////////////////////////////////////////////////////
 public boolean sleepIn(boolean weekday, boolean vacation) {
   if(weekday == false || vacation == true){
-   return true;
-   }
-   return false;
+    return true;
+  }
+  return false;
 }
 
 /////// monkeyTrouble ////////////////////////////////////////////////////////////
@@ -71,5 +71,17 @@ public boolean posNeg(int a, int b, boolean negative) {
   }
   else {
    return ((a<0 && b>0) || (a>0 && b<0));
-   }
+  }
+}
+
+/////// posNeg ////////////////////////////////////////////////////////////////////
+public String notString(String str) {
+  String a = "not ";
+  if(str.length()>=3 && str.substring(0,3).equals("not")){
+    return str;
+  }
+  else{
+    String b = a + str;
+    return b;
+  }
 }
