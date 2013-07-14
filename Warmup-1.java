@@ -85,3 +85,83 @@ public String notString(String str) {
     return b;
   }
 }
+
+/////// missingChar ////////////////////////////////////////////////////////////////
+public String missingChar(String str, int n) {
+  String a = str.substring(0,n);
+  String back = str.substring(n+1,str.length());
+  return a +back;
+}
+
+/////// frontBack //////////////////////////////////////////////////////////////////
+public String frontBack(String str) {
+  if(str.length() <= 1) return str;
+  
+  String mid = str.substring(1,str.length()-1);
+  return str.charAt(str.length()-1) + mid + str.charAt(0);
+}
+
+/////// front3 /////////////////////////////////////////////////////////////////////
+public String front3(String str) {
+  String front;
+  if(str.length() >=3){
+   front = str.substring(0,3);
+  }
+  else{
+    front = str;
+  }
+  return front + front + front;
+}
+
+/////// backAround /////////////////////////////////////////////////////////////////
+public String backAround(String str) {
+  //String mid = str.substring(1,str.length()-1);
+  String last = str.substring(str.length()-1);
+  return last + str + last;
+}
+
+/////// or35 ///////////////////////////////////////////////////////////////////////
+public boolean or35(int n) {
+  if(n % 3 == 0 ||n%5==0)
+   return true;
+  return false;
+}
+
+/////// front22 ////////////////////////////////////////////////////////////////////
+public String front22(String str) {
+  // First figure the number of chars to take
+  int take = 2;
+  if (take > str.length()) {
+    take = str.length();
+  }
+  
+  String front = str.substring(0, take);
+  return front + str + front;
+}
+
+/////// startHi ////////////////////////////////////////////////////////////////////
+public boolean startHi(String str) {
+  if(str.length() < 2)
+   return false;
+  String firstTwo = str.substring(0,2);
+  if(firstTwo.equals("hi"))
+   return true;
+  else
+   return false;
+}
+
+/////// icyHot //////////////////////////////////////////////////////////////////////
+public boolean icyHot(int temp1, int temp2) {
+  if(temp1< 0 && temp2 >100 || temp2<0 && temp1>100)
+   return true;
+  else
+   return false;
+}
+
+/////// in1020 //////////////////////////////////////////////////////////////////////
+public boolean in1020(int a, int b) {
+  if(a>=10 && a<=20 ||b>=10 && b<=20)
+   return true;
+  else
+   return false;
+}
