@@ -36,3 +36,17 @@ public int sum3(int[] nums) {
   }
   return sum;
 }
+
+/////// rotateLeft3 //////////////////////////////////////////////////////////////
+public int[] rotateLeft3(int[] nums) {
+  int[] new1 = new int[nums.length];//make new array same size as nums
+  for(int i=0; i<nums.length; i++){
+   new1[i] = nums[i]; //copy all data
+  }
+
+  nums[0] = new1[1];
+  nums[1] = new1[2];
+  nums[2] = new1[0];
+  return nums;
+  
+}
