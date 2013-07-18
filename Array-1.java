@@ -50,3 +50,15 @@ public int[] rotateLeft3(int[] nums) {
   return nums;
   
 }
+
+/////// reverse3 //////////////////////////////////////////////////////////////////
+public int[] reverse3(int[] nums) {
+  int[] rev = new int[nums.length];
+  for(int i=0; i<nums.length; i++){
+   rev[i] = nums[i];
+  }
+  nums[0]=rev[2];
+  nums[1]=rev[1];
+  nums[2]=rev[0];
+  return nums;
+}
