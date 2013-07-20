@@ -51,7 +51,7 @@ public int[] rotateLeft3(int[] nums) {
   
 }
 
-/////// reverse3 //////////////////////////////////////////////////////////////////
+/////// reverse3 /////////////////////////////////////////////////////////////////
 public int[] reverse3(int[] nums) {
   int[] rev = new int[nums.length];
   for(int i=0; i<nums.length; i++){
@@ -63,7 +63,7 @@ public int[] reverse3(int[] nums) {
   return nums;
 }
 
-/////// maxEnd3 ////////////////////////////////////////////////////////////////////
+/////// maxEnd3 ///////////////////////////////////////////////////////////////////
 public int[] maxEnd3(int[] nums) {
   int max;
   if(nums[0]>nums[2])
@@ -75,4 +75,18 @@ public int[] maxEnd3(int[] nums) {
    nums[i] = max;
   }
   return nums;
+}
+
+/////// sum2 ///////////////////////////////////////////////////////////////////////
+public int sum2(int[] nums) {
+  int sum;
+  if(nums.length == 0){
+   return 0;}
+  else if(nums.length<2){
+   sum = nums[0];
+   return sum;}
+  else{
+   sum = nums[0] + nums[1];
+   return sum;
+  }
 }
