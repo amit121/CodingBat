@@ -81,10 +81,12 @@ public int[] maxEnd3(int[] nums) {
 public int sum2(int[] nums) {
   int sum;
   if(nums.length == 0){
-   return 0;}
+   return 0;
+  }
   else if(nums.length<2){
    sum = nums[0];
-   return sum;}
+   return sum;
+  }
   else{
    sum = nums[0] + nums[1];
    return sum;
