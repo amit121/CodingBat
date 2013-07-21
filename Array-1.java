@@ -92,3 +92,11 @@ public int sum2(int[] nums) {
    return sum;
   }
 }
+
+/////// middleWay //////////////////////////////////////////////////////////////////
+public int[] middleWay(int[] a, int[] b) {
+  int[] arrayNew = new int[2];
+  arrayNew[0] = a[1];
+  arrayNew[1] = b[1];
+  return arrayNew;
+}
