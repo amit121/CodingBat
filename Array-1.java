@@ -125,3 +125,10 @@ public boolean no23(int[] nums) {
   }
   return false;
 }
+
+/////// makeLast /////////////////////////////////////////////////////////////////////
+public int[] makeLast(int[] nums) {
+  int[] doubleArray = new int[nums.length*2];
+  doubleArray[doubleArray.length-1]=nums[nums.length-1];
+  return doubleArray;
+}
