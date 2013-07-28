@@ -158,3 +158,24 @@ public int[] fix23(int[] nums) {
   else
    return nums;
 }
+
+/////// start1 /////////////////////////////////////////////////////////////////////////
+public int start1(int[] a, int[] b) {
+  if(a.length <1 && b.length<1)
+   return 0;
+  if(b.length<1 && a[0] == 1)
+   return 1;
+  if(a.length<1 && b[0] == 1)
+   return 1;
+  if(a.length>=1 && b.length>=1){
+    if(a[0] == 1 && b[0] == 1)
+     return 2;
+    else if(a[0] != 1 && b[0] == 1)
+     return 1;
+    else if(a[0] == 1 && b[0] != 1)
+     return 1;
+    else
+     return 0;
+    }
+    return 0;
+}
