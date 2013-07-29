@@ -189,3 +189,13 @@ public int[] biggerTwo(int[] a, int[] b) {
    return b;
   else return a;
 }
+
+/////// makeMiddle //////////////////////////////////////////////////////////////////////
+public int[] makeMiddle(int[] nums) {
+  if(nums.length == 2)
+   return nums;
+  int[] one = new int[2];
+  one[0] = nums[(nums.length/2)-1];
+  one[1] = nums[(nums.length/2)];
+  return one;
+}
