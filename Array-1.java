@@ -199,3 +199,17 @@ public int[] makeMiddle(int[] nums) {
   one[1] = nums[(nums.length/2)];
   return one;
 }
+
+/////// plusTwo //////////////////////////////////////////////////////////////////////////
+public int[] plusTwo(int[] a, int[] b) {
+  int[] newArray = new int[4];
+  int a0 = a[0];
+  int a1 = a[1];
+  int b0 = b[0];
+  int b1 = b[1];
+  newArray[0] = a0;
+  newArray[1] = a1;
+  newArray[2] = b0;
+  newArray[3] = b1;
+  return newArray;
+}
