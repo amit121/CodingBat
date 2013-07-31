@@ -213,3 +213,14 @@ public int[] plusTwo(int[] a, int[] b) {
   newArray[3] = b1;
   return newArray;
 }
+
+/////// swapEnds /////////////////////////////////////////////////////////////////////////
+public int[] swapEnds(int[] nums) {
+  int[] temp = new int[nums.length];
+  for(int i=0; i<nums.length; i++){
+   temp[i] = nums[i];
+  }
+  temp[0] = nums[nums.length-1];
+  temp[nums.length-1] = nums[0];
+  return temp;
+}
