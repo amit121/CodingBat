@@ -224,3 +224,15 @@ public int[] swapEnds(int[] nums) {
   temp[nums.length-1] = nums[0];
   return temp;
 }
+
+/////// midThree /////////////////////////////////////////////////////////////////////////
+public int[] midThree(int[] nums) {
+  if(nums.length == 3)
+   return nums;
+  
+  int[] one = new int[3];
+  one[0] = nums[(int)(nums.length/2)-1];
+  one[1] = nums[(int)(nums.length/2)];
+  one[2] = nums[(int)(nums.length/2)+1];
+   return one;
+}
