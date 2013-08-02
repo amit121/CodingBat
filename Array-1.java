@@ -236,3 +236,16 @@ public int[] midThree(int[] nums) {
   one[2] = nums[(int)(nums.length/2)+1];
    return one;
 }
+
+/////// maxTriple ////////////////////////////////////////////////////////////////////////
+public int maxTriple(int[] nums) {
+  int max;
+  if(nums[0]>nums[nums.length-1])
+   max = nums[0];
+  else
+   max = nums[nums.length-1];
+   
+  if(nums[nums.length/2] > max){
+   max=nums[nums.length/2];}
+   return max;
+}
