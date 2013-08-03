@@ -249,3 +249,15 @@ public int maxTriple(int[] nums) {
    max=nums[nums.length/2];}
    return max;
 }
+
+/////// frontPiece ///////////////////////////////////////////////////////////////////////
+public int[] frontPiece(int[] nums) {
+  int[] temp = new int[2];
+  if(nums.length<2)
+   return nums;
+  else if(nums.length>=2){
+   temp[0] = nums[0];
+   temp[1] = nums[1];
+  }
+  return temp;
+}
