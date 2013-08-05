@@ -272,3 +272,21 @@ public boolean unlucky1(int[] nums) {
    return true;
   return false;
 }
+
+/////// make2 //////////////////////////////////////////////////////////////////////////////
+public int[] make2(int[] a, int[] b) {
+  int[] one = new int[2];
+  if(a.length > 1){
+   one[0] = a[0];
+   one[1] = a[1];
+   }
+  else if(a.length > 0){
+   one[0] = a[0];
+   one[1] = b[0];
+   }
+  else {
+   one[0] = b[0];
+   one[1] = b[1];
+   }
+  return one;
+}
