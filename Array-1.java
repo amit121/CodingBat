@@ -290,3 +290,26 @@ public int[] make2(int[] a, int[] b) {
    }
   return one;
 }
+
+/////// front11 ////////////////////////////////////////////////////////////////////////////
+public int[] front11(int[] a, int[] b) {
+  int[] one = new int[2];
+  int[] two = new int[1];
+  int[] three = new int[0];
+  
+  if(a.length > 0 && b.length > 0){
+   one[0] = a[0];
+   one[1] = b[0];
+   return one;
+   }
+  
+  if(a.length > 0 && b.length < 1){
+   two[0] = a[0];
+   return two;
+   }
+   else if(b.length > 0 && a.length < 1){
+    two[0] = b[0];
+    return two;
+    }
+   return three;
+}
