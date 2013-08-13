@@ -225,3 +225,17 @@ public int intMax(int a, int b, int c) {
    max = c;
   return max;
 }
+
+/////// close10 ///////////////////////////////////////////////////////////////////////////
+public int close10(int a, int b) {
+  int val =10;
+  int adif = Math.abs(a-val);
+  int bdif = Math.abs(b-val);
+  
+  if(adif<bdif)
+   return a;
+  else if(bdif<adif)
+   return b;
+  else
+   return 0;
+}
