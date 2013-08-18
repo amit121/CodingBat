@@ -289,3 +289,13 @@ public boolean lastDigit(int a, int b) {
   else
    return false;
 }
+
+/////// endUp ////////////////////////////////////////////////////////////////////////////////
+public String endUp(String str) {
+  if(str.length()>=3)
+   return str.substring(0,str.length()-3)+str.toUpperCase().substring(str.length()-3,str.length());
+  else if(str.length()<=2)
+   return str.toUpperCase();
+  else
+   return "";
+}
