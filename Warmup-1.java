@@ -299,3 +299,12 @@ public String endUp(String str) {
   else
    return "";
 }
+
+/////// everyNth //////////////////////////////////////////////////////////////////////////////
+public String everyNth(String str, int n) {
+  String one = "";
+  for(int i=0;i<str.length();i+=n){
+   one = one + str.charAt(i);
+  }
+  return one;
+}
