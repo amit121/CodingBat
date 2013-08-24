@@ -46,3 +46,11 @@ public int caughtSpeeding(int speed, boolean isBirthday) {
   else
    return 2;
 }
+
+/////// sortaSum //////////////////////////////////////////////////////////////////////
+public int sortaSum(int a, int b) {
+  if(a+b>=10 && a+b<=19)
+   return 20;
+  else
+   return a+b;
+}
