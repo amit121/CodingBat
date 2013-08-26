@@ -69,7 +69,7 @@ public String alarmClock(int day, boolean vacation) {
    return "10:00";
 }
 
-/////// love6 ///////////////////////////////////////////////////////////////////////////
+/////// love6 //////////////////////////////////////////////////////////////////////////
 public boolean love6(int a, int b) {
   if(a==6 || b==6 ||a+b==6 ||a-Math.abs(b)==6 || Math.abs(b)-Math.abs(a)==6)
    return true;
