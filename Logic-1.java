@@ -77,7 +77,7 @@ public boolean love6(int a, int b) {
    return false;
 }
 
-/////// in1To10 /////////////////////////////////////////////////////////////////////////
+/////// in1To10 ////////////////////////////////////////////////////////////////////////
 public boolean in1To10(int n, boolean outsideMode) {
   if(outsideMode){
    if(n<=1 || n>=10)
@@ -88,5 +88,13 @@ public boolean in1To10(int n, boolean outsideMode) {
   if(n>=1 && n<=10)
    return true;
   else
+   return false;
+}
+
+/////// specialEleven ///////////////////////////////////////////////////////////////////
+public boolean specialEleven(int n) {
+  if(n%11==0 || n%11==1)
+   return true;
+  else 
    return false;
 }
