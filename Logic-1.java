@@ -116,3 +116,12 @@ public boolean old35(int n) {
   else
    return false;
 }
+
+/////// less20 ////////////////////////////////////////////////////////////////////////////
+public boolean less20(int n) {
+  int k =0;
+  if(n%20==18 || n%20==19)
+    return true;
+   else 
+    return false;
+}
