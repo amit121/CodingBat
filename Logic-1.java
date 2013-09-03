@@ -141,3 +141,13 @@ public int teenSum(int a, int b) {
   else
    return a+b;
 }
+
+/////// answerCell /////////////////////////////////////////////////////////////////////////
+public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) {
+  if(isMorning && isMom && !isAsleep)
+   return true;
+  else if(!isAsleep && !isMorning)
+   return true;
+  else
+   return false;
+}
