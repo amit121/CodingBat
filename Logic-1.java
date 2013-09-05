@@ -152,7 +152,7 @@ public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) {
    return false;
 }
 
-/////// teaParty ///////////////////////////////////////////////////////////////////////////
+/////// teaParty ////////////////////////////////////////////////////////////////////////////
 public int teaParty(int tea, int candy) {
   if(tea<5 || candy <5)
    return 0;
@@ -162,4 +162,16 @@ public int teaParty(int tea, int candy) {
    return 1;
   else
    return 0;
+}
+
+/////// fizzString ///////////////////////////////////////////////////////////////////////////
+public String fizzString(String str) {
+  if(str.substring(0,1).equals("f") && str.substring(str.length()-1,str.length()).equals("b"))
+   return "FizzBuzz";
+  else if(str.substring(0,1).equals("f"))
+   return "Fizz";
+  else if(str.substring(str.length()-1,str.length()).equals("b"))
+   return "Buzz";
+  else
+   return str;
 }
