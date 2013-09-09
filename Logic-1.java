@@ -205,3 +205,13 @@ public boolean inOrder(int a, int b, int c, boolean bOk) {
   else
    return false;
 }
+
+/////// inOrderEqual ////////////////////////////////////////////////////////////////////////////
+public boolean inOrderEqual(int a, int b, int c, boolean equalOk) {
+  if(equalOk && b>=a && c>=b)
+   return true;
+  else if(!equalOk && b>a && c>b)
+   return true;
+  else
+   return false;
+}
